@@ -48,6 +48,8 @@ function auto_elements_styling(){
     $('p').css('visibility','hidden');
     // Button
     $('button').setClass('btn btn-primary');
+    // Input
+    $('input').setClass('form-control');
 }
 
 $(document).ready(function() {

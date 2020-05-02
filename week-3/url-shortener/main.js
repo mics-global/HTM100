@@ -57,4 +57,3 @@ $(document).ready(function() {
 
     auto_elements_styling();
 });
-
