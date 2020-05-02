@@ -45,6 +45,7 @@ function auto_elements_styling(){
     $('#shortened-url').css('margin-top','20px');
     $('#shortened-url').setClass('alert alert-success');
     $('#shortened-url').css('visibility','hidden');
+    $('#url').setClass('form-control');
     // Button
     $('#get-shortened-url').setClass('btn btn-primary');
 }
