@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<head>
-    <title>Random Lyric</title>
-    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script language="JavaScript" crossorigin="anonymous" type="text/javascript" src="main.js"></script>
-</head>
-<body>
-    <iframe 
-    id="the-iframe"
-    width="100%" 
-    height="500px" 
-    src="https://scrimba.com/c/cWnbVghP" 
-    allowfullscreen="allowfullscreen" 
-    allowpaymentrequest 
-    frameborder="0"
-    ></iframe>
-</body>
-</html>
+<p>
+    <button mat-button (click)="toggleUpvote()">{{upvoteCount}} Upvotes</button>
+    <button mat-button (click)="showAnswerDiscussions()">{{discussionCount}} Discussions</button>
+    <button mat-button (click)="toggleReply()">{{replyValue}}</button>
+    <span style="font-size: small; float: right; margin-top: 10px;">{{lastEdited}}</span>
+    <span (click)="reportToggle()" [className]="reported ? 'post-report-button report-button' : 'pre-report-button report-button'">
+      {{reported ? 'Undo Report Answer' : 'Report Answer'}}
+    </span>
+
+</p>
